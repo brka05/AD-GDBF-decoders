@@ -1,11 +1,12 @@
-%code lenght N=1276
-%code rate R=0.76
+// 5GNR code
+//code lenght N=1276
+//code rate R=0.76
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Parity check matrix (connections of varible nodes)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%first number in each line represents the number of connections
-% remaining numbers are indeces of rows connected to specific variable (numbering starts from 1)
+////////////////////////////////////////////////////
+//Parity check matrix (connections of varible nodes)
+////////////////////////////////////////////////////
+//first number in each line represents the number of connections
+//remaining numbers are indeces of rows connected to specific variable (numbering starts from 1)
 
 7 15 56 127 168 179 222 279
 7 16 57 128 169 180 223 280
@@ -1284,110 +1285,512 @@
 1 307 0 0 0 0 0 0
 1 308 0 0 0 0 0 0
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-GDBF-w/MA decoder
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% number of iterations: 300
-%iterations after momenum is changed:  50	100	150	200	250  
+///////////////////////////////////////////////////
+//GDBF-w/MA decoder
+///////////////////////////////////////////////////
 
-alpha_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857
-weight-2 								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286
-weight-3                                3	                1.40000000000000	3.22222222222222	3.42857142857143	4	                4.42857142857143
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429
+////////////////////////////////////
+Total number of iterations : 300
+////////////////////////////////////
+/////////////////////////
+Component decoder:  1
+Iteration range:  1  -  50
+alpha scalling(weight-1): 4.142857e+00
+alpha scalling(weight-2): 3.428571e+00
+alpha scalling(weight-3): 3
+alpha scalling(weight-4): 2.428571e+00
+alpha scalling(weight-5): 2.285714e+00
+alpha scalling(weight-7): 2.428571e+00
+beta scalling(weight-1): 4.142857e+00
+beta scalling(weight-2): 3.428571e+00
+beta scalling(weight-3): 3
+beta scalling(weight-4): 2.428571e+00
+beta scalling(weight-5): 2.285714e+00
+beta scalling(weight-7): 2.428571e+00
+Momentum values: 5 2 2 1
+/////////////////////////
+Component decoder:  2
+Iteration range: 51  - 100
+alpha scalling(weight-1): 2.600000e+00
+alpha scalling(weight-2): 2.400000e+00
+alpha scalling(weight-3): 1.400000e+00
+alpha scalling(weight-4): 1
+alpha scalling(weight-5): 8.000000e-01
+alpha scalling(weight-7): 1.200000e+00
+beta scalling(weight-1): 2.600000e+00
+beta scalling(weight-2): 2.400000e+00
+beta scalling(weight-3): 1.400000e+00
+beta scalling(weight-4): 1
+beta scalling(weight-5): 8.000000e-01
+beta scalling(weight-7): 1.200000e+00
+Restart switch (r_i): 1
+Momentum values: 5 2 2 0
+/////////////////////////
+Component decoder:  3
+Iteration range: 101  - 150
+alpha scalling(weight-1): 3.333333e+00
+alpha scalling(weight-2): 2.666667e+00
+alpha scalling(weight-3): 3.222222e+00
+alpha scalling(weight-4): 2.222222e+00
+alpha scalling(weight-5): 3.111111e+00
+alpha scalling(weight-7): 1.111111e+00
+beta scalling(weight-1): 3.333333e+00
+beta scalling(weight-2): 2.666667e+00
+beta scalling(weight-3): 3.222222e+00
+beta scalling(weight-4): 2.222222e+00
+beta scalling(weight-5): 3.111111e+00
+beta scalling(weight-7): 1.111111e+00
+Restart switch (r_i): 1
+Momentum values: 8 3 2 1
+/////////////////////////
+Component decoder:  4
+Iteration range: 151  - 200
+alpha scalling(weight-1): 4.285714e+00
+alpha scalling(weight-2): 4.428571e+00
+alpha scalling(weight-3): 3.428571e+00
+alpha scalling(weight-4): 3.428571e+00
+alpha scalling(weight-5): 3.857143e+00
+alpha scalling(weight-7): 1.428571e+00
+beta scalling(weight-1): 4.285714e+00
+beta scalling(weight-2): 4.428571e+00
+beta scalling(weight-3): 3.428571e+00
+beta scalling(weight-4): 3.428571e+00
+beta scalling(weight-5): 3.857143e+00
+beta scalling(weight-7): 1.428571e+00
+Restart switch (r_i): 1
+Momentum values: 11 3 3 2
+/////////////////////////
+Component decoder:  5
+Iteration range: 201  - 250
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.571429e+00
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 3.142857e+00
+alpha scalling(weight-5): 2.857143e+00
+alpha scalling(weight-7): 4.428571e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.571429e+00
+beta scalling(weight-3): 4
+beta scalling(weight-4): 3.142857e+00
+beta scalling(weight-5): 2.857143e+00
+beta scalling(weight-7): 4.428571e+00
+Restart switch (r_i): 1
+Momentum values: 8 6 4 4
+/////////////////////////
+Component decoder:  6
+Iteration range: 251  - 300
+alpha scalling(weight-1): 4.571429e+00
+alpha scalling(weight-2): 3.857143e+00
+alpha scalling(weight-3): 4.428571e+00
+alpha scalling(weight-4): 1.571429e+00
+alpha scalling(weight-5): 1.714286e+00
+alpha scalling(weight-7): 4.285714e+00
+beta scalling(weight-1): 4.571429e+00
+beta scalling(weight-2): 3.857143e+00
+beta scalling(weight-3): 4.428571e+00
+beta scalling(weight-4): 1.571429e+00
+beta scalling(weight-5): 1.714286e+00
+beta scalling(weight-7): 4.285714e+00
+Restart switch (r_i): 1
+Momentum values: 8 7 7 3
 
-beta_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857
-weight-2								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286						
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429
+////////////////////////////////////
+Total number of iterations: 500
+////////////////////////////////////
 
-adjacent decoder conectivity r_i
-(1 -> decoders are unconnceted)
-(0 -> decoders are connected):         1 1 1 1 
-momenum vectors:   
-										5	2	2	1
-										5	2	2	0
-										8	3	2	1
-										11	3	3	2
-										8	6	4	4
-										8	7	7	3
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% number of iterations: 500
-%iterations after momenum is changed:  50	100	150	200	250	300	350	400	450  
+/////////////////////////
+Component decoder:  1
+Iteration range:  1  -  50
+alpha scalling(weight-1): 4.142857e+00
+alpha scalling(weight-2): 3.428571e+00
+alpha scalling(weight-3): 3
+alpha scalling(weight-4): 2.428571e+00
+alpha scalling(weight-5): 2.285714e+00
+alpha scalling(weight-7): 2.428571e+00
+beta scalling(weight-1): 4.142857e+00
+beta scalling(weight-2): 3.428571e+00
+beta scalling(weight-3): 3
+beta scalling(weight-4): 2.428571e+00
+beta scalling(weight-5): 2.285714e+00
+beta scalling(weight-7): 2.428571e+00
+Momentum values: 5 2 2 1
+/////////////////////////
+Component decoder:  2
+Iteration range: 51  - 100
+alpha scalling(weight-1): 2.600000e+00
+alpha scalling(weight-2): 2.400000e+00
+alpha scalling(weight-3): 1.400000e+00
+alpha scalling(weight-4): 1
+alpha scalling(weight-5): 8.000000e-01
+alpha scalling(weight-7): 1.200000e+00
+beta scalling(weight-1): 2.600000e+00
+beta scalling(weight-2): 2.400000e+00
+beta scalling(weight-3): 1.400000e+00
+beta scalling(weight-4): 1
+beta scalling(weight-5): 8.000000e-01
+beta scalling(weight-7): 1.200000e+00
+Restart switch (r_i): 1
+Momentum values: 5 2 2 0
+/////////////////////////
+Component decoder:  3
+Iteration range: 101  - 150
+alpha scalling(weight-1): 3.333333e+00
+alpha scalling(weight-2): 2.666667e+00
+alpha scalling(weight-3): 3.222222e+00
+alpha scalling(weight-4): 2.222222e+00
+alpha scalling(weight-5): 3.111111e+00
+alpha scalling(weight-7): 1.111111e+00
+beta scalling(weight-1): 3.333333e+00
+beta scalling(weight-2): 2.666667e+00
+beta scalling(weight-3): 3.222222e+00
+beta scalling(weight-4): 2.222222e+00
+beta scalling(weight-5): 3.111111e+00
+beta scalling(weight-7): 1.111111e+00
+Restart switch (r_i): 1
+Momentum values: 8 3 2 1
+/////////////////////////
+Component decoder:  4
+Iteration range: 151  - 200
+alpha scalling(weight-1): 4.285714e+00
+alpha scalling(weight-2): 4.428571e+00
+alpha scalling(weight-3): 3.428571e+00
+alpha scalling(weight-4): 3.428571e+00
+alpha scalling(weight-5): 3.857143e+00
+alpha scalling(weight-7): 1.428571e+00
+beta scalling(weight-1): 4.285714e+00
+beta scalling(weight-2): 4.428571e+00
+beta scalling(weight-3): 3.428571e+00
+beta scalling(weight-4): 3.428571e+00
+beta scalling(weight-5): 3.857143e+00
+beta scalling(weight-7): 1.428571e+00
+Restart switch (r_i): 1
+Momentum values: 11 3 3 2
+/////////////////////////
+Component decoder:  5
+Iteration range: 201  - 250
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.571429e+00
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 3.142857e+00
+alpha scalling(weight-5): 2.857143e+00
+alpha scalling(weight-7): 4.428571e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.571429e+00
+beta scalling(weight-3): 4
+beta scalling(weight-4): 3.142857e+00
+beta scalling(weight-5): 2.857143e+00
+beta scalling(weight-7): 4.428571e+00
+Restart switch (r_i): 1
+Momentum values: 8 6 4 4
+/////////////////////////
+Component decoder:  6
+Iteration range: 251  - 300
+alpha scalling(weight-1): 4.571429e+00
+alpha scalling(weight-2): 3.857143e+00
+alpha scalling(weight-3): 4.428571e+00
+alpha scalling(weight-4): 1.571429e+00
+alpha scalling(weight-5): 1.714286e+00
+alpha scalling(weight-7): 4.285714e+00
+beta scalling(weight-1): 4.571429e+00
+beta scalling(weight-2): 3.857143e+00
+beta scalling(weight-3): 4.428571e+00
+beta scalling(weight-4): 1.571429e+00
+beta scalling(weight-5): 1.714286e+00
+beta scalling(weight-7): 4.285714e+00
+Restart switch (r_i): 1
+Momentum values: 8 7 7 3
+/////////////////////////
+Component decoder:  7
+Iteration range: 301  - 350
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.142857e+00
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 2.571429e+00
+alpha scalling(weight-5): 4.571429e+00
+alpha scalling(weight-7): 2.571429e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.142857e+00
+beta scalling(weight-3): 4
+beta scalling(weight-4): 2.571429e+00
+beta scalling(weight-5): 4.571429e+00
+beta scalling(weight-7): 2.571429e+00
+Restart switch (r_i): 1
+Momentum values: 11 3 3 3
+/////////////////////////
+Component decoder:  8
+Iteration range: 351  - 400
+alpha scalling(weight-1): 6
+alpha scalling(weight-2): 4
+alpha scalling(weight-3): 3.800000e+00
+alpha scalling(weight-4): 2.600000e+00
+alpha scalling(weight-5): 3.600000e+00
+alpha scalling(weight-7): 1.600000e+00
+beta scalling(weight-1): 6
+beta scalling(weight-2): 4
+beta scalling(weight-3): 3.800000e+00
+beta scalling(weight-4): 2.600000e+00
+beta scalling(weight-5): 3.600000e+00
+beta scalling(weight-7): 1.600000e+00
+Restart switch (r_i): 1
+Momentum values: 8 4 0 0
+/////////////////////////
+Component decoder:  9
+Iteration range: 401  - 450
+alpha scalling(weight-1): 3.857143e+00
+alpha scalling(weight-2): 2.285714e+00
+alpha scalling(weight-3): 3.285714e+00
+alpha scalling(weight-4): 2.857143e+00
+alpha scalling(weight-5): 2.571429e+00
+alpha scalling(weight-7): 2
+beta scalling(weight-1): 3.857143e+00
+beta scalling(weight-2): 2.285714e+00
+beta scalling(weight-3): 3.285714e+00
+beta scalling(weight-4): 2.857143e+00
+beta scalling(weight-5): 2.571429e+00
+beta scalling(weight-7): 2
+Restart switch (r_i): 1
+Momentum values: 7 7 2 0
+////////////////////////////////////
+Total number of iterations: 750
+////////////////////////////////////
 
-alpha_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857    4.42857142857143	6	                3.85714285714286	3.20000000000000
-weight-2 								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286    4.14285714285714	4	                2.28571428571429	3.20000000000000
-weight-3                                3	                1.40000000000000	3.22222222222222	3.42857142857143	4	                4.42857142857143    4	                3.80000000000000	3.28571428571429	2.20000000000000
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857    2.57142857142857	2.60000000000000	2.85714285714286	1.80000000000000
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571    4.57142857142857	3.60000000000000	2.57142857142857	0.60000000000000
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429    2.57142857142857	1.60000000000000	2	                0.60000000000000
-
-beta_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857    4.42857142857143	6	                3.85714285714286	6.40000000000000
-weight-2								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286	4.14285714285714	4	                2.28571428571429	6.40000000000000					
-weight-3                                3	                1.40000000000000	3.22222222222222	3.42857142857143	4	                4.42857142857143    4	                3.80000000000000	3.28571428571429	4.40000000000000
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857    2.57142857142857	2.60000000000000	2.85714285714286	3.60000000000000
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571    4.57142857142857	3.60000000000000	2.57142857142857	1.20000000000000
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429    2.57142857142857	1.60000000000000	2	                1.20000000000000
-
-adjacent decoder conectivity r_i
-(1 -> decoders are unconnceted)
-(0 -> decoders are connected):         1 1 1 1 1 1 1 1 1
-momenum vectors:   										
-									5	2	2	1
-									5	2	2	0
-									8	3	2	1
-									11	3	3	2
-									8	6	4	4
-									8	7	7	3
-									11	3	3	3
-									8	4	0	0
-									7	7	2	0
-									11	9	4	3										
-										
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% number of iterations: 750
-%iterations after momenum is changed:  50	100	150	200	250	300	350	400	450 500 550 600 650 700  
-
-alpha_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857	4.42857142857143	6	                3.85714285714286	3.20000000000000	4.42857142857143	4.57142857142857	4	                4.42857142857143	3.71428571428571
-weight-2 								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286    4.14285714285714	4	                2.28571428571429	3.20000000000000    4.28571428571429	4.42857142857143	4	                3.57142857142857	2.71428571428571
-weight-3                                3	                1.40000000000000	3.22222222222222	3.42857142857143	4	                4.42857142857143    4	                3.80000000000000	3.28571428571429	2.20000000000000    3.14285714285714	3.42857142857143	4	                4.42857142857143	1.57142857142857
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857    2.57142857142857	2.60000000000000	2.85714285714286	1.80000000000000    1.57142857142857	3.57142857142857	2.28571428571429	3.85714285714286	1.14285714285714
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571    4.57142857142857	3.60000000000000	2.57142857142857	0.60000000000000    2	                2.42857142857143	2.14285714285714	3.28571428571429	1.14285714285714
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429    2.57142857142857	1.60000000000000	2	                0.60000000000000    3.14285714285714	1.42857142857143	2.57142857142857	2.14285714285714	1.28571428571429
-
-beta_i coefficients:                      
-weight-1								4.14285714285714	2.60000000000000	3.33333333333333	4.28571428571429	4.42857142857143	4.57142857142857    4.42857142857143	6	                3.85714285714286	6.40000000000000   4.28571428571429	4.42857142857143	   4	                3.57142857142857	2.71428571428571
-weight-2								3.42857142857143	2.40000000000000	2.66666666666667	4.42857142857143	4.57142857142857	3.85714285714286	4.14285714285714	4	                2.28571428571429	6.40000000000000   4.28571428571429	4.42857142857143   	   4	                3.57142857142857	2.71428571428571				
-weight-3                                3	                1.40000000000000	3.22222222222222	3.42857142857143	4	                4.42857142857143    4	                3.80000000000000	3.28571428571429	4.40000000000000   3.14285714285714	3.42857142857143	   4	                4.42857142857143	1.57142857142857
-weight-4 								2.42857142857143	1	                2.22222222222222	3.42857142857143	3.14285714285714	1.57142857142857    2.57142857142857	2.60000000000000	2.85714285714286	3.60000000000000   1.57142857142857	3.57142857142857	   2.28571428571429	    3.85714285714286	1.14285714285714
-weight-5 								2.28571428571429	0.80000000000000	3.11111111111111	3.85714285714286	2.85714285714286	1.71428571428571    4.57142857142857	3.60000000000000	2.57142857142857	1.20000000000000   2	            2.42857142857143	   2.14285714285714	    3.28571428571429	1.14285714285714
-weight-7                                2.42857142857143	1.20000000000000	1.11111111111111	1.42857142857143	4.42857142857143	4.28571428571429    2.57142857142857	1.60000000000000	2	                1.20000000000000   3.14285714285714	1.42857142857143	   2.57142857142857	    2.14285714285714	1.28571428571429
-
-adjacent decoder conectivity 
-(1 -> decoders are unconnceted)
-(0 -> decoders are connected):         1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-momenum vectors:   										
-									5	2	2	1
-									5	2	2	0
-									8	3	2	1
-									11	3	3	2
-									8	6	4	4
-									8	7	7	3
-									11	3	3	3
-									8	4	0	0
-									7	7	2	0
-									11	9	4	3
-									10	2	2	2
-									5	3	3	3
-									4	3	3	0
-									5	5	3	1
-									8	6	1	1										
+/////////////////////////
+Component decoder:  1
+Iteration range:  1  -  50
+alpha scalling(weight-1): 4.142857e+00
+alpha scalling(weight-2): 3.428571e+00
+alpha scalling(weight-3): 3
+alpha scalling(weight-4): 2.428571e+00
+alpha scalling(weight-5): 2.285714e+00
+alpha scalling(weight-7): 2.428571e+00
+beta scalling(weight-1): 4.142857e+00
+beta scalling(weight-2): 3.428571e+00
+beta scalling(weight-3): 3
+beta scalling(weight-4): 2.428571e+00
+beta scalling(weight-5): 2.285714e+00
+beta scalling(weight-7): 2.428571e+00
+Momentum values: 5 2 2 1
+/////////////////////////
+Component decoder:  2
+Iteration range: 51  - 100
+alpha scalling(weight-1): 2.600000e+00
+alpha scalling(weight-2): 2.400000e+00
+alpha scalling(weight-3): 1.400000e+00
+alpha scalling(weight-4): 1
+alpha scalling(weight-5): 8.000000e-01
+alpha scalling(weight-7): 1.200000e+00
+beta scalling(weight-1): 2.600000e+00
+beta scalling(weight-2): 2.400000e+00
+beta scalling(weight-3): 1.400000e+00
+beta scalling(weight-4): 1
+beta scalling(weight-5): 8.000000e-01
+beta scalling(weight-7): 1.200000e+00
+Restart switch (r_i): 1
+Momentum values: 5 2 2 0
+/////////////////////////
+Component decoder:  3
+Iteration range: 101  - 150
+alpha scalling(weight-1): 3.333333e+00
+alpha scalling(weight-2): 2.666667e+00
+alpha scalling(weight-3): 3.222222e+00
+alpha scalling(weight-4): 2.222222e+00
+alpha scalling(weight-5): 3.111111e+00
+alpha scalling(weight-7): 1.111111e+00
+beta scalling(weight-1): 3.333333e+00
+beta scalling(weight-2): 2.666667e+00
+beta scalling(weight-3): 3.222222e+00
+beta scalling(weight-4): 2.222222e+00
+beta scalling(weight-5): 3.111111e+00
+beta scalling(weight-7): 1.111111e+00
+Restart switch (r_i): 1
+Momentum values: 8 3 2 1
+/////////////////////////
+Component decoder:  4
+Iteration range: 151  - 200
+alpha scalling(weight-1): 4.285714e+00
+alpha scalling(weight-2): 4.428571e+00
+alpha scalling(weight-3): 3.428571e+00
+alpha scalling(weight-4): 3.428571e+00
+alpha scalling(weight-5): 3.857143e+00
+alpha scalling(weight-7): 1.428571e+00
+beta scalling(weight-1): 4.285714e+00
+beta scalling(weight-2): 4.428571e+00
+beta scalling(weight-3): 3.428571e+00
+beta scalling(weight-4): 3.428571e+00
+beta scalling(weight-5): 3.857143e+00
+beta scalling(weight-7): 1.428571e+00
+Restart switch (r_i): 1
+Momentum values: 11 3 3 2
+/////////////////////////
+Component decoder:  5
+Iteration range: 201  - 250
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.571429e+00
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 3.142857e+00
+alpha scalling(weight-5): 2.857143e+00
+alpha scalling(weight-7): 4.428571e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.571429e+00
+beta scalling(weight-3): 4
+beta scalling(weight-4): 3.142857e+00
+beta scalling(weight-5): 2.857143e+00
+beta scalling(weight-7): 4.428571e+00
+Restart switch (r_i): 1
+Momentum values: 8 6 4 4
+/////////////////////////
+Component decoder:  6
+Iteration range: 251  - 300
+alpha scalling(weight-1): 4.571429e+00
+alpha scalling(weight-2): 3.857143e+00
+alpha scalling(weight-3): 4.428571e+00
+alpha scalling(weight-4): 1.571429e+00
+alpha scalling(weight-5): 1.714286e+00
+alpha scalling(weight-7): 4.285714e+00
+beta scalling(weight-1): 4.571429e+00
+beta scalling(weight-2): 3.857143e+00
+beta scalling(weight-3): 4.428571e+00
+beta scalling(weight-4): 1.571429e+00
+beta scalling(weight-5): 1.714286e+00
+beta scalling(weight-7): 4.285714e+00
+Restart switch (r_i): 1
+Momentum values: 8 7 7 3
+/////////////////////////
+Component decoder:  7
+Iteration range: 301  - 350
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.142857e+00
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 2.571429e+00
+alpha scalling(weight-5): 4.571429e+00
+alpha scalling(weight-7): 2.571429e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.142857e+00
+beta scalling(weight-3): 4
+beta scalling(weight-4): 2.571429e+00
+beta scalling(weight-5): 4.571429e+00
+beta scalling(weight-7): 2.571429e+00
+Restart switch (r_i): 1
+Momentum values: 11 3 3 3
+/////////////////////////
+Component decoder:  8
+Iteration range: 351  - 400
+alpha scalling(weight-1): 6
+alpha scalling(weight-2): 4
+alpha scalling(weight-3): 3.800000e+00
+alpha scalling(weight-4): 2.600000e+00
+alpha scalling(weight-5): 3.600000e+00
+alpha scalling(weight-7): 1.600000e+00
+beta scalling(weight-1): 6
+beta scalling(weight-2): 4
+beta scalling(weight-3): 3.800000e+00
+beta scalling(weight-4): 2.600000e+00
+beta scalling(weight-5): 3.600000e+00
+beta scalling(weight-7): 1.600000e+00
+Restart switch (r_i): 1
+Momentum values: 8 4 0 0
+/////////////////////////
+Component decoder:  9
+Iteration range: 401  - 450
+alpha scalling(weight-1): 3.857143e+00
+alpha scalling(weight-2): 2.285714e+00
+alpha scalling(weight-3): 3.285714e+00
+alpha scalling(weight-4): 2.857143e+00
+alpha scalling(weight-5): 2.571429e+00
+alpha scalling(weight-7): 2
+beta scalling(weight-1): 3.857143e+00
+beta scalling(weight-2): 2.285714e+00
+beta scalling(weight-3): 3.285714e+00
+beta scalling(weight-4): 2.857143e+00
+beta scalling(weight-5): 2.571429e+00
+beta scalling(weight-7): 2
+Restart switch (r_i): 1
+Momentum values: 7 7 2 0
+/////////////////////////
+Component decoder: 10
+Iteration range: 451  - 500
+alpha scalling(weight-1): 3.200000e+00
+alpha scalling(weight-2): 3.200000e+00
+alpha scalling(weight-3): 2.200000e+00
+alpha scalling(weight-4): 1.800000e+00
+alpha scalling(weight-5): 6.000000e-01
+alpha scalling(weight-7): 6.000000e-01
+beta scalling(weight-1): 6.400000e+00
+beta scalling(weight-2): 6.400000e+00
+beta scalling(weight-3): 4.400000e+00
+beta scalling(weight-4): 3.600000e+00
+beta scalling(weight-5): 1.200000e+00
+beta scalling(weight-7): 1.200000e+00
+Restart switch (r_i): 1
+Momentum values: 11 9 4 3
+/////////////////////////
+Component decoder: 11
+Iteration range: 501  - 550
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 4.285714e+00
+alpha scalling(weight-3): 3.142857e+00
+alpha scalling(weight-4): 1.571429e+00
+alpha scalling(weight-5): 2
+alpha scalling(weight-7): 3.142857e+00
+beta scalling(weight-1): 4.285714e+00
+beta scalling(weight-2): 4.285714e+00
+beta scalling(weight-3): 3.142857e+00
+beta scalling(weight-4): 1.571429e+00
+beta scalling(weight-5): 2
+beta scalling(weight-7): 3.142857e+00
+Restart switch (r_i): 1
+Momentum values: 10 2 2 2
+/////////////////////////
+Component decoder: 12
+Iteration range: 551  - 600
+alpha scalling(weight-1): 4.571429e+00
+alpha scalling(weight-2): 4.428571e+00
+alpha scalling(weight-3): 3.428571e+00
+alpha scalling(weight-4): 3.571429e+00
+alpha scalling(weight-5): 2.428571e+00
+alpha scalling(weight-7): 1.428571e+00
+beta scalling(weight-1): 4.428571e+00
+beta scalling(weight-2): 4.428571e+00
+beta scalling(weight-3): 3.428571e+00
+beta scalling(weight-4): 3.571429e+00
+beta scalling(weight-5): 2.428571e+00
+beta scalling(weight-7): 1.428571e+00
+Restart switch (r_i): 1
+Momentum values: 5 3 3 3
+/////////////////////////
+Component decoder: 13
+Iteration range: 601  - 650
+alpha scalling(weight-1): 4
+alpha scalling(weight-2): 4
+alpha scalling(weight-3): 4
+alpha scalling(weight-4): 2.285714e+00
+alpha scalling(weight-5): 2.142857e+00
+alpha scalling(weight-7): 2.571429e+00
+beta scalling(weight-1): 4
+beta scalling(weight-2): 4
+beta scalling(weight-3): 4
+beta scalling(weight-4): 2.285714e+00
+beta scalling(weight-5): 2.142857e+00
+beta scalling(weight-7): 2.571429e+00
+Restart switch (r_i): 1
+Momentum values: 4 3 3 0
+/////////////////////////
+Component decoder: 14
+Iteration range: 651  - 700
+alpha scalling(weight-1): 4.428571e+00
+alpha scalling(weight-2): 3.571429e+00
+alpha scalling(weight-3): 4.428571e+00
+alpha scalling(weight-4): 3.857143e+00
+alpha scalling(weight-5): 3.285714e+00
+alpha scalling(weight-7): 2.142857e+00
+beta scalling(weight-1): 3.571429e+00
+beta scalling(weight-2): 3.571429e+00
+beta scalling(weight-3): 4.428571e+00
+beta scalling(weight-4): 3.857143e+00
+beta scalling(weight-5): 3.285714e+00
+beta scalling(weight-7): 2.142857e+00
+Restart switch (r_i): 1
+Momentum values: 5 5 3 1
+						
 										
 																				

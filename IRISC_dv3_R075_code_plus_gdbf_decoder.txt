@@ -1,11 +1,13 @@
-%code lenght N=1296
-%code rate R=0.75
+// iRISC code
+/////code lenght N=1296
+/////code rate R=0.75
+// column weight-3 code
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Parity check matrix (connections of varible nodes)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%first number in each line represents the number of connections
-% remaining numbers are indeces of rows connected to specific variable (numbering starts from 1)
+//////////////////////////////////
+////Parity check matrix (connections of varible nodes)
+/////////////////////////////////
+//first number in each line represents the number of connections
+//remaining numbers are indeces of rows connected to specific variable (numbering starts from 1)
 3 48 117 234
 3 49 118 235
 3 50 119 236
@@ -1303,74 +1305,362 @@
 3 72 132 265
 3 73 133 266
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-GDBF w/AM decoder
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% number of iterations: 510
-%iterations after momenum is changed:  30	60	90	120	150	180	210	240	270	300	330	360	390	420	450	480 
-alpha_i coefficients:                  1         1       1       1       1        1      1       1       1       1       1        1       1       1      1       1   1  
-beta_i coefficients:                   1         1       1       1       1        1      1       1        1      1       1        1        1      1      1       1   1 
-adjacent decoder conectivity r_i
-(1 -> decoders are unconnceted)
-(0 -> decoders are connected):         1	0	1	0	0	0	1	1	1	1	0	1	0	1	0	0
-momenum vectors:   
-										0	0	0
-										2	1	0
-										2	0	0
-										2	1	0
-										2	2	1
-										0	0	0
-										0	0	0
-										0	0	0
-										1	0	0
-										0	0	0
-										1	1	0
-										0	0	0
-										2	0	0
-										0	0	0
-										1	1	0
-										1	1	1
-										1	0	0
+////////////////////////////////////////////////////
+///GDBF w/AM decoder
+///////////////////////////////////////////////////
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% number of iterations: 990
-%iterations after momenum is changed:  30	60	90	120	150	180	210	240	270	300	330	360	390	420	450	48  510	  540	570	600	630	660	690	720	750	780	810	840	870	900	930	960	
-a_i coefficients:                      1         1       1       1       1       1       1       1       1        1      1       1       1       1       1       1    1     1    1       1       1       1       1       1       1       1       1       1       1       1       1       1       1     
-b_i coefficients:                      1         1       1       1       1       1       1       1       1        1      1       1       1       1       1       1    1     1    1       1       1       1       1       1       1       1       1       1       1       1       1       1       1     
-adjacent decoder conectivity r_i
-(1 -> decoders are unconnceted)
-(0 -> decoders are connected):         1	0	1	0	0	0	1	1	1	1	0	1	0	1	 0	0    0	   1	0	0	0	1	1	0	0	1	0	1	0	0	0	1
-momenum vectors:   
-										0	0	0
-										2	1	0
-										2	0	0
-										2	1	0
-										2	2	1
-										0	0	0
-										0	0	0
-										0	0	0
-										1	0	0
-										0	0	0
-										1	1	0
-										0	0	0
-										2	0	0
-										0	0	0
-										1	1	0
-										1	1	1
-										1	0	0
-										1	1	0
-										1	1	0
-										2	1	0
-										2	0	0
-										1	1	0
-										2	0	0
-										2	1	1
-										0	0	0
-										1	1	1
-										2	1	1
-										0	0	0
-										2	1	0
-										0	0	0
-										1	0	0
-										0	0	0
-										2	1	0
+////////////////////////////////////
+Total number of iterations: 510
+////////////////////////////////////
+/////////////////////////
+Component decoder:  1
+alpha scalling:  1
+beta scaling:  1
+Iteration range:  1  -  30
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  2
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 31  -  60
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder:  3
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 61  -  90
+Restart switch (r_i): 0
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder:  4
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 91  - 120
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder:  5
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 121  - 150
+Restart switch (r_i): 0
+Momentum values: 2 2 1 
+/////////////////////////
+Component decoder:  6
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 151  - 180
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  7
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 181  - 210
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  8
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 211  - 240
+Restart switch (r_i): 1
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  9
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 241  - 270
+Restart switch (r_i): 1
+Momentum values: 1 0 0 
+/////////////////////////
+Component decoder: 10
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 271  - 300
+Restart switch (r_i): 1
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 11
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 301  - 330
+Restart switch (r_i): 1
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 12
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 331  - 360
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 13
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 361  - 390
+Restart switch (r_i): 1
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder: 14
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 391  - 420
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 15
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 421  - 450
+Restart switch (r_i): 1
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 16
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 451  - 480
+Restart switch (r_i): 0
+Momentum values: 1 1 1 
+/////////////////////////
+Component decoder: 17
+alpha scalling:  1
+beta scaling:  1
+Iteration range: 481  - 510
+Restart switch (r_i): 0
+Momentum values: 1 0 0 
+////////////////////////////////////
+Total number of iterations: 990
+////////////////////////////////////
+
+/////////////////////////
+Component decoder:  1
+Iteration range:  1  -  30
+alpha scalling:  1
+beta scalling:  1
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  2
+Iteration range: 31  -  60
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder:  3
+Iteration range: 61  -  90
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder:  4
+Iteration range: 91  - 120
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder:  5
+Iteration range: 121  - 150
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 2 2 1 
+/////////////////////////
+Component decoder:  6
+Iteration range: 151  - 180
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  7
+Iteration range: 181  - 210
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  8
+Iteration range: 211  - 240
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder:  9
+Iteration range: 241  - 270
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 1 0 0 
+/////////////////////////
+Component decoder: 10
+Iteration range: 271  - 300
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 11
+Iteration range: 301  - 330
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 12
+Iteration range: 331  - 360
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 13
+Iteration range: 361  - 390
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder: 14
+Iteration range: 391  - 420
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 15
+Iteration range: 421  - 450
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 16
+Iteration range: 451  - 480
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 1 1 
+/////////////////////////
+Component decoder: 17
+Iteration range: 481  - 510
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 0 0 
+/////////////////////////
+Component decoder: 18
+Iteration range: 511  - 540
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 19
+Iteration range: 541  - 570
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 20
+Iteration range: 571  - 600
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder: 21
+Iteration range: 601  - 630
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder: 22
+Iteration range: 631  - 660
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 1 0 
+/////////////////////////
+Component decoder: 23
+Iteration range: 661  - 690
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 0 0 
+/////////////////////////
+Component decoder: 24
+Iteration range: 691  - 720
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 1 
+/////////////////////////
+Component decoder: 25
+Iteration range: 721  - 750
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 26
+Iteration range: 751  - 780
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 1 1 
+/////////////////////////
+Component decoder: 27
+Iteration range: 781  - 810
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 1 
+/////////////////////////
+Component decoder: 28
+Iteration range: 811  - 840
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 29
+Iteration range: 841  - 870
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
+/////////////////////////
+Component decoder: 30
+Iteration range: 871  - 900
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 31
+Iteration range: 901  - 930
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 1 0 0 
+/////////////////////////
+Component decoder: 32
+Iteration range: 931  - 960
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 0 0 0 
+/////////////////////////
+Component decoder: 33
+Iteration range: 961  - 990
+alpha scalling:  1
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 2 1 0 
