@@ -2059,7 +2059,7 @@
 6 54 108 133 234 283 351
 
 ///////////////////////////////////////////////////
-////GDBF-w/MA decoder
+////AD-GDBF decoder (Fig. 2(b))
 ///////////////////////////////////////////////////
 
 ////////////////////////////////////
@@ -2187,3 +2187,79 @@ alpha scalling:  2
 beta scalling:  1
 Restart switch (r_i): 0
 Momentum values: 4 3 0 
+
+
+///////////////////////////////////////////////////
+////AD-GDBF decoder used as post-processing unit (Fig. 2(b))
+///////////////////////////////////////////////////
+////////////////////////////////////
+Total number of iterations : 1000
+////////////////////////////////////
+/////////////////////////
+Component decoder:  1
+Iteration range:  1  - 100
+alpha scalling:  4
+beta scalling:  2
+Momentum values: 2 2 2 
+/////////////////////////
+Component decoder:  2
+Iteration range: 101  - 200
+alpha scalling:  2
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 3 1 1 
+/////////////////////////
+Component decoder:  3
+Iteration range: 201  - 300
+alpha scalling:  1
+beta scalling:  3
+Restart switch (r_i): 0
+Momentum values: 5 2 2 
+/////////////////////////
+Component decoder:  4
+Iteration range: 301  - 400
+alpha scalling:  3
+beta scalling:  4
+Restart switch (r_i): 1
+Momentum values: 5 3 0 
+/////////////////////////
+Component decoder:  5
+Iteration range: 401  - 500
+alpha scalling:  2
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 5 3 1
+/////////////////////////
+Component decoder:  6
+Iteration range: 501  - 600
+alpha scalling:  3
+beta scalling:  1
+Restart switch (r_i): 1
+Momentum values: 4 0 0
+/////////////////////////
+Component decoder:  7
+Iteration range: 601  - 700
+alpha scalling:  4
+beta scalling:  2
+Restart switch (r_i): 0
+Momentum values: 5 2 1 
+/////////////////////////
+Component decoder:  8
+Iteration range: 701  - 800
+alpha scalling:  4
+beta scalling:  3
+Restart switch (r_i): 0
+Momentum values: 5 4 4 
+/////////////////////////
+Component decoder:  9
+Iteration range: 801  - 900
+alpha scalling:  2
+beta scalling:  1
+Restart switch (r_i): 0
+Momentum values: 3 3 3 
+/////////////////////////
+Component decoder: 10
+Iteration range: 901  - 1000
+alpha scalling:  3
+beta scalling:  2
+Restart switch (r_i): 0
